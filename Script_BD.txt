@@ -1,0 +1,22 @@
+create database imobiliaria 
+default character set utf8
+default collate utf8_general_ci;
+
+create table locacao_imovels( 
+id int auto_increment,
+cep int (9) not null,
+ rua varchar (100), 
+ numero int(10),
+ bairro varchar(100),
+ cidade varchar(100), 
+ estado varchar(3),
+ primary key (cep)
+ )default charset = utf8;
+ 
+ insert into locacao_imovels values
+ (DEFAULT, '30001970','Avenida Afonso Pena', '1270', 'Centro','Belo Horizonte', ' MG'),
+ (DEFAULT, '30100939' 'Avenida do Contorno', '9125', 'Barro Preto', 'Belo Horizonte','MG'),
+  (DEFAULT,'30110005','Avenida do Contorno', '1193', 'Floresta','Belo Horizonte','MG'),
+   (DEFAULT,'30110008','Avenida do Contorno', '1192','Floresta','Belo Horizonte','MG'),
+    (DEFAULT,'30110009','Avenida do Contorno','1827', 'Floresta','Belo Horizonte','MG'),
+     (DEFAULT,'30110012	', 'Avenida do Controno', '2550','Floresta','Belo Horizonte','MG');
